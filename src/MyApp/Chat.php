@@ -16,6 +16,9 @@ class Chat implements MessageComponentInterface {
 
 
 
+
+
+
     public function onOpen(ConnectionInterface $conn) {
         // Store the new connection to send messages to later
         $this->clients->attach($conn);
