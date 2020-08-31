@@ -8,9 +8,13 @@ use Ratchet\ConnectionInterface;
 class Chat implements MessageComponentInterface {
     protected $clients;
 
+
+
     public function __construct() {
         $this->clients = new \SplObjectStorage;
     }
+
+
 
     public function onOpen(ConnectionInterface $conn) {
         // Store the new connection to send messages to later
